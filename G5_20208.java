@@ -5,7 +5,9 @@ import java.util.*;
 
 /*
  *  1. posList의 길이 len부터 시작해서 좌표들의 조합을 구한다.
- *  2.
+ *  2. 진우의 현재 좌표 jState.pos와 아직 방문하지 않은 좌표 nPos와의 거리가 jState.hp이하이면 탐색을 진행한다.
+    3. len만큼의 좌표를 탐색했고, jState.pos에서 집의 좌표 hPos의 거리가 jState.hp이하라면 탐색을 완전히 종료한다.
+    4. 만약 len만큼의 좌표를 탐색하지 못했다면, len의 크기를 1씩 줄여가며 탐색을 계속한다.
  */
 public class G5_20208 {
     static int N, M, H, len;
